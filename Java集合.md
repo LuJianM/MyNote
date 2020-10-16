@@ -1,5 +1,7 @@
 ## Java集合
 
+https://www.jianshu.com/p/939b8a672070
+
 ### 1.说说java常见的集合有哪些？
 
 collection接口和map接口是所有集合类的父接口。
@@ -127,4 +129,88 @@ final Node<K,V>[] resize() {
     return newTab;
 }
 ```
+
+
+
+### 5. HashMap是怎么解决哈希冲突的？
+
+#### 什么是哈希
+
+Hash，也就是散列，就是把任意长度的输入通过算法得到固定长度的输出，其输出值为散列值（哈希值）。
+
+这种转换是一种压缩映射，就是将一种任意长度的消息压缩到某一固定长度的消息摘要函数。
+
+
+
+由于输入值的长度是要大于散列值。造成哈希函数有如下特点：
+
+输入值---->散列函数---->散列值（哈希值）
+
+
+
+如果散列值不同，那么输入值一定不同。
+
+输入值不同，散列值有可能相同。
+
+
+
+
+
+
+
+### 6.HashMap中为什么不直接用hashCode()处理后的哈希值作为table的下标？
+
+
+
+
+
+### 7.HashMap在JDK1.7和JDK1.8中有哪些不同？
+
+
+
+### 8.为什么HashMap中String，Integer这样的包装类适合作为K？
+
+
+
+### 9.ConcurrentHashMap和Hashtable的区别？
+
+
+
+### 10.Java集合的快速失败机制“fail-fast”？
+
+
+
+### 11.ArrayList和Vector的区别？
+
+
+
+### 12.ArrayList和LinkedList的区别？（被问过）
+
+首先两者的都是List的实现，具有List中元素有序，不唯一的特点。
+
+ArrayList是用长度可变的数组实现的，遍历元素和随机访问效率较高。
+
+而LinkedList使用链表实现的，插入、删除元素是效率较高。
+
+
+
+### 13.HashSet是如何保证数据不重复的？
+
+
+
+### 14.BlockingQueue是什么？
+
+
+
+### 15.线程安全的集合有哪些
+
+Vector：长度可变的数组，几乎所有的public方法都加上了synchronize关键字
+
+HashTable：与HashTable类似，在HashTable的基础上，给所有的方法加上synchronize关键字。
+
+
+
+
+
+
 
