@@ -6,13 +6,23 @@ https://www.jianshu.com/p/939b8a672070
 
 collection接口和map接口是所有集合类的父接口。
 
-collection接口的子接口有list和set；
+
+
+collection接口的子接口有list、set和queue；
 
 map接口的实现类有HashMap、TreeMap、HashTable、CurrentHashMap等
 
 list接口的实现类有ArrayList、LinkedList、Vector和Stack。
 
 set接口的实现类有HashSet、TreeSet、LinkedHashset等。
+
+
+
+
+
+
+
+
 
 ### 2. HashMap与HashTable的区别？
 
